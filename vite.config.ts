@@ -25,8 +25,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  server: createRemoteServer('orders'),
-  preview: createRemotePreview('orders'),
+  server: createRemoteServer('orders', '.'),
+  preview: createRemotePreview('orders', '.'),
   build: {
     target: 'chrome89',
   },

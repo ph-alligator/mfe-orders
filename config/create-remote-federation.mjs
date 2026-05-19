@@ -12,7 +12,7 @@ function getPortForRemote(_remoteName, packageDir) {
     const m = (pkg.scripts?.dev ?? '').match(/--port\s+(\d+)/);
     if (m) return Number(m[1]);
   }
-  const vitePath = resolve(__dirname, '..', packageDir, 'vite.config.ts');
+  const vitePath = resolve(__dirname, '..', packageDir === '.' ? '.' : packageDir, 'vite.config.ts');
   if (existsSync(vitePath)) {
     const m = readFileSync(vitePath, 'utf-8').match(/port:\s*(\d+)/);
     if (m) return Number(m[1]);

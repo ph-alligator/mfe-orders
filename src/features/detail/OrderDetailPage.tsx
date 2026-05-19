@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import { Button, Card, CardContent, CardHeader, CardTitle } from '@org/ui';
+import { Button, Card, CardContent, CardHeader, CardTitle } from '@ph-alligator/ui';
 import { MOCK_ORDERS } from '../../data/mock-orders';
 
 export function OrderDetailPage() {

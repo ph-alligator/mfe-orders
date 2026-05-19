@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Button, Card, CardContent, CardHeader, CardTitle } from '@org/ui';
+import { Button, Card, CardContent, CardHeader, CardTitle } from '@ph-alligator/ui';
 import { MOCK_ORDERS, type Order } from '../../data/mock-orders';
 
 function StatusBadge({ status }: { status: Order['status'] }) {
